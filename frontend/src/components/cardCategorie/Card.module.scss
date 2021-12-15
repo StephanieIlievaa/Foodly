@@ -1,0 +1,78 @@
+.card {
+  padding: 0rem 1rem;
+  background-color: white;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.media {
+  border-radius: 15px;
+  width: 309px !important;
+  height: 286px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px !important;
+}
+.title {
+  margin: 0;
+  font-weight: bold;
+}
+
+.listItem {
+  display: flex;
+  gap: 20px;
+  background-color: #f9f9f9;
+  width: 63%;
+  padding: 1.25rem;
+  margin: 1rem 0rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ingredient {
+  display: flex;
+}
+
+.live {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  width: 33px;
+  height: 17px;
+}
+
+.counter {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 100%;
+  display: grid;
+  height: 100%;
+  align-items: center;
+}
+img {
+  border-radius: 5%;
+}
+.name {
+  font-family: Montserrat;
+  font-style: Black;
+  font-size: 98px;
+  line-height: 98px;
+
+}
+
+.chip {
+  color:#503a34;
+}
+.content__info {
+font-style: Bold;
+font-size: 18px;
+line-height: 100%;
+text-align: center;
+font-weight: bolder;
+
+}
