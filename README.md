@@ -8,12 +8,12 @@
 ```js
 cd frontend
 ```
--Install all needed packages
+- Install all needed packages
 ```js
 npm install
 ```
--And run the application
+- And run the application
 ```js
 npm start
 ```
--The app will run on http://localhost:3000/
+- The app will run on http://localhost:3000/
