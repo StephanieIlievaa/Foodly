@@ -1,4 +1,4 @@
-import Card from "../cardCategorie/Card.jsx";
+import Card from "../card-categorie/Card.jsx";
 // import { useState } from "react";
 import styles from './SeaFood.module.scss'
 import { Container, Grid } from "@mui/material";

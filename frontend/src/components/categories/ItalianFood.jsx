@@ -1,4 +1,4 @@
-import Card from "../cardCategorie/Card.jsx";
+import Card from "../card-categorie/Card.jsx"
 // import { useState } from "react";
 import styles from "./ItalianFood.module.scss";
 import {  Container, Grid} from "@mui/material";
@@ -11,7 +11,7 @@ export default function ItalianFood({ cards = [] }) {
       <Grid container className={styles.gridContainer} sx={{position:'relative', left: '154px'}}>
           <Grid item className={styles.titleWrapper}>
             <div className={styles.title}>
-            🌊DOWN FOR SEAFOOD TONIGHT?
+            🌊MAYBE SOME ITALIAN?
             </div>
           </Grid>
         </Grid>

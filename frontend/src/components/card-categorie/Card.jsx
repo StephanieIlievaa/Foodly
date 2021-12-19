@@ -72,7 +72,7 @@ export default function Card({
             </Grid>
             <Grid item xs={6}>
               <Typography id="modal-modal-title" variant="h1" component="h1">
-                <h1 className={styles.name}>{name}</h1>
+                <h1 className={styles.name}>{name.toUpperCase()}</h1>
               </Typography>
               <Button
                 startIcon={<PlayCircleOutlineIcon fontSize="large" />}
@@ -108,29 +108,39 @@ export default function Card({
                 <h3>INSTRUCTIONS</h3>
                 {instructions}
               </Typography>
-              {splitTags &&
-                splitTags.map((tag) => (
-                  <>
-                    <Stack direction="row" spacing={1}>
-                      <Chip color="warning" variant="outlined" label={tag} />
-                    </Stack>
-                  </>
-                ))}
+              <Stack sx={{ my: 2, flexDirection: 'row', display: 'flex' }}>
+                {splitTags &&
+                  splitTags.map((tag) => (
+                    <>
+                      <Chip
+                        sx={{ mx: 1, px: 2, border: "2px solid", alignSelf: 'start' }}
+                        color="warning"
+                        variant="outlined"
+                        label={tag.toUpperCase()}
+                      />
+                    </>
+                  ))}
+              </Stack>
             </Grid>
           </Grid>
         </Box>
       </Modal>
-      <CardContent className={styles.content}>
-        <Box className={styles.content__info}>
-          <div>{name}</div>
+      <CardContent sx={{ flexDirection: "column" }} className={styles.content}>
+        <Box sx={{ ml: 1 }} className={styles.content__info}>
+          <div>{name.toUpperCase()}</div>
         </Box>
-        <Stack>
+        <Stack sx={{ flexDirection: "row" }}>
           {" "}
           {splitTags &&
             splitTags.map((tag) => (
               <>
-                <Stack direction="row" spacing={1}>
-                  <Chip color="warning" variant="outlined" label={tag} />
+                <Stack sx={{ my: 2, mx: 1 }}>
+                  <Chip
+                    sx={{ px: 1, border: "2px solid" }}
+                    color="warning"
+                    variant="outlined"
+                    label={tag.toUpperCase()}
+                  />
                 </Stack>
               </>
             ))}

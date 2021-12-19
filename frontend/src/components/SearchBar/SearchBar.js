@@ -8,7 +8,7 @@ import styles from './SearchBar.module.scss'
 
 
 export default function SearchBar({
-  setSearchTerm
+  onChange
 }) {
 
   return (
@@ -37,9 +37,7 @@ export default function SearchBar({
         <InputBase
           type="text"
           placeholder="Search for recepies"
-          onChange={(event) => {
-            setSearchTerm(event.target.value)
-          }}
+          onChange={(e) => onChange(e)}
         />
       </Box>
     </Container>

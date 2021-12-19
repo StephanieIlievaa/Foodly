@@ -58,10 +58,11 @@ img {
   border-radius: 5%;
 }
 .name {
-  font-family: Montserrat;
+  font-family: fantasy;
   font-style: Black;
-  font-size: 98px;
-  line-height: 98px;
+  font-size: 70px;
+  line-height: 90px;
+  letter-spacing: 5px;
 
 }
 
@@ -74,5 +75,5 @@ font-size: 18px;
 line-height: 100%;
 text-align: center;
 font-weight: bolder;
-
+display: flex;
 }

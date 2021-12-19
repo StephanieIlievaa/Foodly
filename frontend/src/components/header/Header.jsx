@@ -7,7 +7,8 @@ import SearchBar from "../SearchBar/SearchBar.js";
 
 
 export default function Header({
-  setSearchTerm
+  onChange,
+  searchTerm
 }) {
   return (
     <div className={styles.wrapper}>
@@ -17,7 +18,7 @@ export default function Header({
             <Logo />
           </Grid>
           <Grid xs={12} item className={styles.searchBar}  sx={{pt:'40px'}}>
-            <SearchBar setSearchTerm={setSearchTerm} />
+            <SearchBar onChange={onChange}   searchTerm={searchTerm}/>
           </Grid>
         
         </Grid>

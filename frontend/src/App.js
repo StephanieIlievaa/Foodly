@@ -8,21 +8,32 @@ import data from './components/data/data.json';
 import React, { useState } from 'react';
 import Results from "./components/results/Results.jsx";
 
-function App() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [haveResult, setHaveResult] = useState(true)
 
-  console.log(haveResult);
+
+function App() {
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const [haveResult, setHaveResult] = useState(true);
+
+  const onChange = ((event) => {
+    setSearchTerm(event?.target.value);
+
+  })
+
+  // let searchValue = data.filter((val) => {
+  //  val.name.toLowerCase().indexOf(searchTerm?.toLowerCase() > -1)
+  // }
+
 
   return (
     <>
       <div className="App" >
-        <Header setSearchTerm={setSearchTerm} />
-
+        <Header onChange={onChange} />
         <Grid container backgroundColor={'white'} justifyContent="center" sx={{ paddingTop: '140px', paddingBottom: '99px' }}>
           <Grid container justifyContent="center" sx={{ maxWidth: "1320px" }}>
             <Grid item>
-              {searchTerm !== ""
+
+            {searchTerm !== ""
                 ? <>
                   <Results
                     haveResult={haveResult}
@@ -34,15 +45,7 @@ function App() {
                   <Home data={data} />
                 </>}
 
-              {/* {searchTerm !== { searchTerm }
-                ? <>
-                  <NoResults
-                    searchTerm={searchTerm}
-                    data={data} />
-                </>
-                : <>
-                  <Home data={data} />
-                </>} */}
+
             </Grid>
           </Grid>
         </Grid>
