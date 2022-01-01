@@ -1,4 +1,5 @@
-## FOODLY - Simple web app build with ReactJS, HTML and SASS.
+# FOODLY 
+Simple web app build with ReactJS, HTML and SASS.
 ![Screenshot (31)](https://user-images.githubusercontent.com/72206861/146407193-f38cad3f-05d2-4113-a799-b23533bfef78.png)
 
 ## Live demo: https://stoic-albattani-1b8e57.netlify.app/
